@@ -3,7 +3,8 @@ import {
   Text,
   View,
   TextInput,
-  TouchableOpacity
+  TouchableOpacity,
+  Image
 } from 'react-native'
 import { Context } from '../../store'
 
@@ -45,7 +46,10 @@ const Login = (props) => {
   
   return (
     <View style={styles.container}>
-      <Text style={styles.logo}>CleanHouse</Text>
+      <Image
+        style={styles.tinyLogo}
+        source={require('../../../assets/logo.png')}
+      />
       <View style={styles.inputView}>
         <TextInput
           style={styles.inputText}
@@ -73,7 +77,7 @@ const Login = (props) => {
         <Text style={styles.loginText}>Iniciar</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={handleSignUp}>
-        <Text style={styles.loginText}>Registrar</Text>
+        <Text style={styles.optsText}>Registrar</Text>
       </TouchableOpacity>
     </View>
   )

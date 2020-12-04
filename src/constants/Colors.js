@@ -4,5 +4,12 @@ export default {
   darkModerateBlue: '#465881',
   white: '#FFF',
   softRed: '#fb5b5a',
-  grey: 'grey'
+  grey: 'grey',
+  greyCustom: '#dcdceb',
+  green: '#60c253',
+  softGreen: '#d8e1d3',
+  darkGrey: '#9c9ba9',
+  black: 'black',
+  BLUE_BKY: '#004F94',
+  ORANGE_BKY: '#FD7B03'
 }
