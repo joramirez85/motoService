@@ -5,13 +5,14 @@ import Colors from '../../constants/Colors'
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.darkBlue,
+    backgroundColor: Colors.greyCustom,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'flex-start',
+    paddingTop: 40
   },
   inputView: {
     width: '80%',
-    backgroundColor: Colors.darkModerateBlue,
+    backgroundColor: Colors.green,
     borderRadius: 25,
     height: 50,
     marginBottom: 20,
@@ -22,15 +23,27 @@ const styles = StyleSheet.create({
     height: 50,
     color: Colors.white
   },
-  signupBtn: {
+  /* signupBtn: {
     width: '80%',
-    backgroundColor: Colors.softRed,
+    backgroundColor: Colors.black,
     borderRadius: 25,
     height: 50,
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 40,
     marginBottom: 10
+  }, */
+  signupBtn: {
+    width: '80%', 
+    height: 50, 
+    backgroundColor: Colors.black,
+    justifyContent: 'center', 
+    alignItems: 'center',
+    position: 'absolute',
+    marginTop: 40,
+    marginBottom: 30,
+    borderRadius: 25,
+    bottom: 10
   },
   signupText: {
     color: Colors.white
