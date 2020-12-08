@@ -60,7 +60,8 @@ export default class RequestDetails extends Component {
 
   handleRequest = () => {
     console.log('saving request')
-    Alert.alert(
+    this.props.navigation.navigate('ServiceLocation')
+    /* Alert.alert(
       'Servicio Creado',
       'El servicio ha sido creado correctamente',
       [
@@ -71,7 +72,7 @@ export default class RequestDetails extends Component {
           }
         }
       ]
-    )
+    ) */
   }
 
   handleService = () => {

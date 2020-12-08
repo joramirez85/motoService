@@ -29,13 +29,35 @@ const Login = (props) => {
     })
   }
 
+  const simulateLogin = () => {
+    return {
+      data: {
+        name: 'Omar',
+        lastname: 'Ramirez',
+        address: 'San Lucas, 5, San Antonio Tomatlan',
+        email: 'test@test.com',
+        phone: '123456'
+      },
+      status: 200
+    }
+  }
+
   handleLogin = () => {
-    console.log('** handleLogin: ', store)
+    // console.log('** handleLogin: ', store)
     const { navigation } = props
     const credentials = {
       email: store.email,
       password: store.password
     }
+
+    // login request
+    const response = simulateLogin()
+    // console.log('==== response: ', response)
+    dispatch({
+      type: 'setPersonalData',
+      personalData: response.data
+    })
+
     login({navigation, credentials})
   }
 

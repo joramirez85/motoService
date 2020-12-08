@@ -111,6 +111,7 @@ export default class CreateUser extends Component {
           </View>
           <View style={styles.inputView}>
             <TextInput
+              secureTextEntry
               style={styles.inputText}
               placeholder='Contraseña ...'
               placeholderTextColor={Colors.darkBlue}
@@ -119,6 +120,7 @@ export default class CreateUser extends Component {
           </View>
           <View style={styles.inputView}>
             <TextInput
+              secureTextEntry
               style={styles.inputText}
               placeholder='Corroborar contraseña...'
               placeholderTextColor={Colors.darkBlue}

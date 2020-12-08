@@ -11,5 +11,6 @@ export default {
   darkGrey: '#9c9ba9',
   black: 'black',
   BLUE_BKY: '#004F94',
-  ORANGE_BKY: '#FD7B03'
+  ORANGE_BKY: '#FD7B03',
+  orange: '#FF9800'
 }

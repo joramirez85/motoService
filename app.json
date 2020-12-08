@@ -17,7 +17,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.innomich.motoservice",
+      "config": {
+        "googleMapsApiKey": "AIzaSyA_wsEDxcFum1AATFFGf3lhKvdqsX7DyW0"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
